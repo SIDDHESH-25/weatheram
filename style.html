@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Icon or Logo -->
+    <div class="logo-box">
+
+        <div>
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+                <defs>
+                    <linearGradient id="iconGradient" x1="0%" y1="50%" x2="100%" y2="50%">
+                        <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#f1c40f;stop-opacity:1" />
+                    </linearGradient>
+
+                    <radialGradient id="sunGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#e67e22;stop-opacity:1" />
+                    </radialGradient>
+                </defs>
+
+                <g transform="translate(150, 110)">
+                    <path d="M-55,-10 C-35,30 -15,30 5,-10 C15,-30 35,-30 55,-10" stroke="url(#iconGradient)"
+                        stroke-width="12" fill="none" stroke-linecap="round" />
+
+                    <circle cx="0" cy="-35" r="14" fill="url(#sunGradient)" />
+                </g>
+
+                <text x="150" y="240" font-family="Verdana, Geneva, sans-serif" font-size="34" font-weight="600"
+                    fill="#34495e" text-anchor="middle" letter-spacing="1">Weatheram</text>
+
+            </svg>
+        </div>
+    </div>
+    <div class="broadcast-box">
+        <div class="weather-search-date-box">
+            <div class="weather-title-date-box">
+                <div class="weather-title">
+
+                    Weather Forecast
+                </div>
+
+                <div class="date-box">
+                    Sunday-28/02/2026
+
+                </div>
+            </div>
+            <div class="search-box">
+                <button class="search-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                            stroke="#3F3F3F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M20.9999 21L16.6499 16.65" stroke="#3F3F3F" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+                </button>
+                <input type="text" placeholder="Enter the City Name" class="search-input">
+            </div>
+
+        </div>
+        <div class="image-background-box">
+            <div class="city-country-temperature-box">
+                <div class="city">Faridabad</div>
+                <div class="country">India</div>
+                <div class="temperature">28°</div>
+
+            </div>
+            <div class="condition-box">
+                <div class="condition-weather-image">
+
+                    <!-- <svg width="109" height="109" viewBox="0 0 109 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M95.3744 58.0879C94.66 65.8188 91.7586 73.1862 87.0098 79.3283C82.261 85.4704 75.8611 90.133 68.5591 92.7705C61.257 95.4081 53.3549 95.9115 45.7772 94.2218C38.1995 92.5322 31.2597 88.7194 25.7699 83.2296C20.28 77.7397 16.4672 70.8 14.7776 63.2223C13.0879 55.6446 13.5913 47.7424 16.2289 40.4403C18.8664 33.1383 23.529 26.7385 29.6711 21.9896C35.8132 17.2408 43.1807 14.3394 50.9115 13.625C46.3853 19.7484 44.2073 27.2929 44.7736 34.8864C45.3399 42.4799 48.6128 49.618 53.9971 55.0023C59.3815 60.3866 66.5195 63.6596 74.113 64.2258C81.7065 64.7921 89.251 62.6141 95.3744 58.0879Z" stroke="#FEFAF9" stroke-width="9.08333" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg> -->
+                    <img class="current-condition-image" src="" alt="image" width="128px" height="128px">
+                </div>
+                <div class="condition-weather">Clear Sky</div>
+
+                <div class="highest-temperature condition-value">
+                    <div class="highesh-temperatur-svg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 19V5" stroke="#FEFAF9" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M5 12L12 5L19 12" stroke="#FEFAF9" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+                    <div class="highest-temperature-data">
+                        35°
+                    </div>
+                </div>
+                <div class="lowest-temperature condition-value">
+                    <div class="lowest-temperature-svg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 5V19" stroke="#FEFAF9" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M19 12L12 19L5 12" stroke="#FEFAF9" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+                    <div class="lowest-temperature-data">
+                        19°
+                    </div>
+                </div>
+                <div class="wind-speed condition-value">
+                    <div class="wind-speed-svg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.59 4.59C9.82231 4.35631 10.1088 4.18364 10.4239 4.08734C10.739 3.99104 11.073 3.97408 11.3963 4.03799C11.7195 4.10189 12.022 4.24468 12.2768 4.45364C12.5315 4.66261 12.7307 4.93129 12.8566 5.23579C12.9825 5.54029 13.0313 5.87119 12.9985 6.19906C12.9657 6.52693 12.8524 6.84162 12.6687 7.11516C12.4849 7.38869 12.2365 7.61259 11.9454 7.76696C11.6542 7.92133 11.3295 8.00138 11 8H2M12.59 19.41C12.8223 19.6437 13.1088 19.8164 13.4239 19.9127C13.739 20.009 14.073 20.0259 14.3963 19.962C14.7195 19.8981 15.022 19.7553 15.2768 19.5464C15.5315 19.3374 15.7307 19.0687 15.8566 18.7642C15.9825 18.4597 16.0313 18.1288 15.9985 17.8009C15.9657 17.4731 15.8524 17.1584 15.6687 16.8848C15.4849 16.6113 15.2365 16.3874 14.9454 16.233C14.6542 16.0787 14.3295 15.9986 14 16H2M17.73 7.73C18.0208 7.43988 18.3787 7.22591 18.7719 7.10701C19.1652 6.98811 19.5816 6.96794 19.9845 7.04828C20.3874 7.12863 20.7642 7.30702 21.0817 7.56767C21.3993 7.82832 21.6477 8.1632 21.805 8.54269C21.9623 8.92218 22.0236 9.33459 21.9836 9.74344C21.9436 10.1523 21.8035 10.545 21.5756 10.8868C21.3477 11.2286 21.0391 11.509 20.6771 11.7031C20.3151 11.8973 19.9108 11.9993 19.5 12H2"
+                                stroke="#FEFAF9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+                    <div class="wind-speed-data">
+                        27km/h
+                    </div>
+
+                </div>
+                <div class="humidity condition-value">
+                    <div class="humidity-svg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.9999 2.69L17.6599 8.35C18.7792 9.46861 19.5417 10.8941 19.8508 12.4461C20.1599 13.998 20.0018 15.6069 19.3964 17.069C18.7911 18.5311 17.7657 19.7808 16.45 20.6601C15.1343 21.5394 13.5874 22.0087 12.0049 22.0087C10.4224 22.0087 8.87549 21.5394 7.55978 20.6601C6.24407 19.7808 5.2187 18.5311 4.61335 17.069C4.008 15.6069 3.84988 13.998 4.15899 12.4461C4.46809 10.8941 5.23054 9.46861 6.34989 8.35L11.9999 2.69Z"
+                                stroke="#FEFAF9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+
+                    </div>
+                    <div class="humidity-data">
+                        67%
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="button-today-celcius">
+            <div class="today-week-button-box">
+                <button class="today-button button1">Today</button>
+                <button class="week-button button1">Week</button>
+            </div>
+            <div class="data-system">
+                <button class="celcius-button button2">C'</button>
+                <button class="farenhite-button button2">F'</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- cardss ================ -->
+    <!-- cardss ================ -->
+<div class="hourly-container" id="hourly-container" ></div>
+<div class="weekly-container" hidden ></div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
