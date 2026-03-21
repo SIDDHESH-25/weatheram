@@ -4,7 +4,6 @@ async function get() {
     try {
         let city = getCityName();
         if (!city) throw new Error("city name is empty");
-
         let url = `https://api.weatherapi.com/v1/forecast.json?key=4c705e09f4574f72a84150200261903&q=${city}&days=10`;
         let f_data = await fetch(url);
         let f_dataJ = await f_data.json();
