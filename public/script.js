@@ -47,7 +47,7 @@ async function loadWeather() {
     const loader = document.getElementById("loading-overlay");
 
     // 🔹 Show loader
-    loader.removeAttribute("hidden");
+    // loader.removeAttribute("hidden");
 
     // 🔹 Disable search
     document.querySelector(".search-icon").style.pointerEvents = "none";
@@ -68,7 +68,7 @@ async function loadWeather() {
         console.log(err);
     } finally {
         // 🔹 Hide loader ALWAYS
-        loader.setAttribute("hidden", "");
+        // loader.setAttribute("hidden", "");
 
         // 🔹 Enable search
         document.querySelector(".search-icon").style.pointerEvents = "auto";
