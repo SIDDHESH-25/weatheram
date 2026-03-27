@@ -87,10 +87,11 @@ function data_input(object) {
     document.querySelector(".wind-speed-data").innerHTML = object.current.wind_kph + " km/h";
     document.querySelector(".humidity-data").innerHTML = object.current.humidity + "%";
     document.querySelector(".current-condition-image").src = "https:" + object.current.condition.icon;
+    const days = object.forecast.forecastday;
     const dateObj = new Date(days[0].date + "T00:00:00");
     const date = dateObj.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' });
     const dayName = dateObj.toLocaleDateString("en-US", { weekday: "long" });
-    docuement.querySelector(".date-box").innerHTML=date+dayName;
+    document.querySelector(".date-box").innerHTML = date + " " + dayName;
     
 }
 function renderAQI(object) {
