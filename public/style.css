@@ -1132,7 +1132,9 @@ p {
     font-weight: 500;
     color: #333;
 }
-
+#loading-overlay {
+    display: none;
+}
 /* ANIMATION */
 @keyframes spin {
     100% {
