@@ -320,7 +320,7 @@ Use emojis. Keep it concise.
 `;
 
     try {
-        const response = await fetch("http://localhost:3000/api/gemini", {
+        const response = await fetch("https://weather-backend-n05c.onrender.com/api/gemini", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
